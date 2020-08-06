@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Instructions from './components/Instructions'
+import BioSexSlider from './components/BioSexSlider'
+import GenderExpressionSlider from './components/GenderExpressionSlider'
 import './App.css';
 
 function App() {
+  const [biosex1, setBiosex1] = useState();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>The Genderbread Game</h1>
+      <Instructions/>
+      {/* <BioSexSlider/> */}
+      <GenderExpressionSlider/>
     </div>
   );
 }
