@@ -90,7 +90,7 @@ const GenderExpressionSlider = () => {
     */
 
     return (
-        <Box>
+        <Box align="center">
 			<Heading level="2">Gender Expression</Heading>
 			<Box width="medium" className="genderexp1">
 				Feminine

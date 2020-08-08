@@ -1,14 +1,15 @@
 import React from 'react'
+import {Box} from 'grommet'
 
 const AssignedAtBirth = () => {
     return (
-        <div>
+        <Box>
             <form>
                 <input type="checkbox">Intersex</input>
                 <input>Female</input>
                 <input>Male</input>
             </form>
-        </div>
+        </Box>
     )
 }
 
