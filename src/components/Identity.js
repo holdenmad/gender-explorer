@@ -1,10 +1,12 @@
 import React from 'react'
+import {Header, Nav, Anchor, Box, Text, Menu, ResponsiveContext, Icon} from 'grommet'
+
 
 const Identity = () => {
     return (
-        <div>
+        <Box>
             
-        </div>
+        </Box>
     )
 }
 

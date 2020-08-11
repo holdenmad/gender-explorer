@@ -1,10 +1,10 @@
 import React from 'react';
-import {Route, Switch, Link, NavLink} from 'react-router'
+import {BrowserRouter, Route, Switch, Link} from 'react-router-dom'
 import {Box, Heading} from 'grommet'
 import Instructions from './components/Instructions'
 // import AssignedAtBirth from './components/AssignedAtBirth'
 // import BioSexSlider from './components/BioSexSlider'
-import GenderExpressionSlider from './components/GenderExpressionSlider'
+// import GenderExpressionSlider from './components/GenderExpressionSlider'
 // import GenderIdentitySlider from './components/GenderIdentitySlider'
 
 //Pages for Sliders
@@ -15,26 +15,22 @@ import Attraction from './components/Attraction'
 
 import HeaderNav from './components/HeaderNav'
 import FooterNav from './components/FooterNav'
+import Splash from './components/Splash'
 
 import './App.css';
 
 function App() {
   return (
+    <BrowserRouter>
     <Box justify="center" className="App">
       <HeaderNav/>
       <Heading alignSelf="center" level="1">The Genderbread Explorer</Heading>
       <Instructions/>
-      {/* <AssignedAtBirth/> */}
-      {/* <BioSexSlider/> */}
-      <GenderExpressionSlider/>
-      {/* <GenderIdentitySlider/> */}
-      <FooterNav/>
 
-
-  {/* ROUTER */}
+      {/* ROUTER */}
     <Switch>
       <Route exact path="/">
-        <App/>
+        <Splash/>
       </Route>
       <Route exact path="/expression">
         <Expression/>
@@ -49,11 +45,15 @@ function App() {
         <Attraction/>
       </Route>
     </Switch>
+      <FooterNav/>
+
+
+  
 
     </Box>
 
 
- 
+</BrowserRouter>
   );
 
 
