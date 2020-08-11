@@ -1,8 +1,14 @@
 import React from 'react'
+import {useHistory} from 'react-router'
 import {Header, Nav, Anchor, Box, Text, Menu, ResponsiveContext, Icon} from 'grommet'
 // import {Menu} from 'grommet-icons'
 
+// const studentClicked = id => {
+//     history.push("/students/" + id);
+//   };
+
 const HeaderNav = () => {
+    let history = useHistory();
     return (
             <Header pad="medium" background="brand">
                 <Box>
@@ -14,18 +20,18 @@ const HeaderNav = () => {
                         <Menu
                             label="&#x2630;"
                             items={[
-                                { label: 'Expression', onClick: () => {} },
-                                { label: 'Identity', onClick: () => {} },
-                                { label: 'Sex', onClick: () => {} },
-                                { label: 'Attraction', onClick: () => {} }
+                                { label: 'Expression', onClick: () => {history.push("/expression")} },
+                                { label: 'Identity', onClick: () => {history.push("/identity")} },
+                                { label: 'Sex', onClick: () => {history.push("/sex")} },
+                                { label: 'Attraction', onClick: () => {history.push("/attraction")} }
                             ]}
                             />
                         ) : (
                     <Nav justify="end" direction="row">
-                        <Anchor label="Expression"></Anchor>
-                        <Anchor label="Identity"></Anchor>
-                        <Anchor label="Sex"></Anchor>
-                        <Anchor label="Attraction"></Anchor>
+                        <Anchor href="/expression" label="Expression"></Anchor>
+                        <Anchor href="/identity" label="Identity"></Anchor>
+                        <Anchor href="/sex" label="Sex"></Anchor>
+                        <Anchor href="/attraction" label="Attraction"></Anchor>
                     </Nav>
             
     )

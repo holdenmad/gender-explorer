@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RomAttractionSlider = () => {
+const Identity = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const RomAttractionSlider = () => {
     )
 }
 
-export default RomAttractionSlider
+export default Identity

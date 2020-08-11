@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SexAttractionSlider = () => {
+const Expression = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const SexAttractionSlider = () => {
     )
 }
 
-export default SexAttractionSlider
+export default Expression
