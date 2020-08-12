@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header, Nav, Anchor, Box, Text, Menu, ResponsiveContext, Icon} from 'grommet'
+import {Box} from 'grommet'
 
 import AttractionSlider from './AttractionSlider'
 

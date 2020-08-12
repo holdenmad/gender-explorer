@@ -7,25 +7,29 @@ import Instructions from './components/Instructions'
 // import GenderExpressionSlider from './components/GenderExpressionSlider'
 // import GenderIdentitySlider from './components/GenderIdentitySlider'
 
-//Pages for Sliders
+// General Pages
+import Splash from './components/Splash'
+import About from './components/About'
+
+// Gender Pages
 import Expression from './components/Expression'
 import Identity from './components/Identity'
 import Sex from './components/Sex'
 import Attraction from './components/Attraction'
 
+// Components 
 import HeaderNav from './components/HeaderNav'
 import FooterNav from './components/FooterNav'
-import Splash from './components/Splash'
+
 
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-    <Box justify="center" className="App">
+    <Box fill="vertical" height={{min: '100vh'}}>
       <HeaderNav/>
-      <Heading alignSelf="center" level="1">The Genderbread Explorer</Heading>
-      <Instructions/>
+      {/* <Heading alignSelf="center" level="1">Gender Explorer</Heading> */}
 
       {/* ROUTER */}
     <Switch>
@@ -44,12 +48,12 @@ function App() {
       <Route exact path="/attraction">
         <Attraction/>
       </Route>
+      <Route exact path="/about">
+        <About/>
+      </Route>
     </Switch>
+    
       <FooterNav/>
-
-
-  
-
     </Box>
 
 

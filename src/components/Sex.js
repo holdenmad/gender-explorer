@@ -1,11 +1,12 @@
 import React from 'react'
-import {Header, Nav, Anchor, Box, Text, Menu, ResponsiveContext, Icon} from 'grommet'
+import {Box} from 'grommet'
+import BioSexSlider from './BioSexSlider'
 
 
 const Sex = () => {
     return (
         <Box>
-            
+            <BioSexSlider/>
         </Box>
     )
 }
