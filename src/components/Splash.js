@@ -1,17 +1,14 @@
 import React from "react";
 import { Box, Image } from "grommet";
+import Instructions from './Instructions'
 
 const Splash = () => {
   return (
     <Box justify="center" align="center">
-      <Box width="large">
-        <Image fill="width" fit="cover" src="cockpit.jpg" />
-        {/* <Image 
-            fill="horizontal"
-            fit="contain"
-            src="astronaut.png"
-        /> */}
+      <Box width="xlarge">
+        <Image fill="horizontal" fit="cover" src="cockpit.jpg" />
       </Box>
+      <Instructions/>
     </Box>
   );
 };

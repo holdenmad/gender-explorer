@@ -3,7 +3,7 @@ import {Box, Heading, Paragraph} from 'grommet'
 
 const Instructions = () => {
     return (
-        <Box margin="large" border={{size: "small"}} align="center" justify="center">
+        <Box pad="medium" margin="large" border={{size: "small"}} align="center" justify="center">
             <Heading level="2">Instructions</Heading>
             <Paragraph>For each slider, take a few seconds and think
              about yourself and how this continuum jives with you.

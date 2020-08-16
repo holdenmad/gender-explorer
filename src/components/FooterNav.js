@@ -3,8 +3,7 @@ import {Box, Nav, Footer, Anchor} from 'grommet'
 
 const FooterNav = () => {
     return (
-        <Box>
-            <Footer className="footer" fill="horizontal" margin={{"top": "large"}} justify="between" background="brand" pad="medium">
+            <Footer margin={{"top": "xlarge"}} className="footer" fill="horizontal" justify="between" background="brand" pad="medium">
                 <Nav direction="row">
                     <Box direction="row">
                         <i class="fab fa-github"></i><Anchor margin={{left: 'small'}}>Github</Anchor>
@@ -14,7 +13,6 @@ const FooterNav = () => {
                     </Box>
                 </Nav>
             </Footer>
-        </Box>
     )
 }
 

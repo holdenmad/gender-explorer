@@ -20,7 +20,7 @@ const theme = {
 ReactDOM.render(
   <React.StrictMode>
   
-    <Grommet theme={theme}>
+    <Grommet full theme={theme}>
       <App />
     </Grommet>
   

@@ -1,0 +1,30 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+    
+}
+.main {
+    padding-bottom: 60px;
+}
+
+.footer {
+    position: absolute; 
+    bottom: 0;
+    height: 60px;
+}  */
+
+/* .main {
+    flex: 1 0 auto;
+}*/
