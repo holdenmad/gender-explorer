@@ -11,22 +11,34 @@ const genderIdentityMatrix = {
   "cisgender female": {
     min: { femaleness: 80, maleness: 0 },
     max: { femaleness: 100, maleness: 20 },
-    description: "A term used to describe a ",
+    description:
+      "Someone assigned female at birth who identifies with being female.",
   },
   "cisgender male": {
     min: { femaleness: 0, maleness: 80 },
     max: { femaleness: 20, maleness: 100 },
-    description: "Description of cis male",
+    description:
+      "Someone assigned male at birth who identifies with being male.",
   },
   "transgender female": {
     min: { femaleness: 80, maleness: 0 },
     max: { femaleness: 100, maleness: 20 },
-    description: "Description of cis female",
+    description: "Someone assigned male at birth who identifies as female.",
+  },
+  transfeminine: {
+    min: { femaleness: 60, maleness: 0 },
+    max: { femaleness: 100, maleness: 30 },
+    description: "Someone assigned male at birth who identifies as female.",
   },
   "transgender male": {
     min: { femaleness: 0, maleness: 80 },
     max: { femaleness: 20, maleness: 100 },
-    description: "Description of cis male",
+    description: "Someone assigned female at birth who identifies as male.",
+  },
+  transmasculine: {
+    min: { femaleness: 0, maleness: 60 },
+    max: { femaleness: 30, maleness: 100 },
+    description: "Someone assigned female at birth who identifies as male.",
   },
   genderfluid: {
     min: { femaleness: 0, maleness: 0 },
@@ -36,12 +48,14 @@ const genderIdentityMatrix = {
   agender: {
     min: { femaleness: 0, maleness: 0 },
     max: { femaleness: 20, maleness: 20 },
-    description: "Description of agender",
+    description:
+      "Someone who doesn’t identify with the idea or experience of having a gender.",
   },
   bigender: {
     min: { femaleness: 50, maleness: 50 },
     max: { femaleness: 100, maleness: 100 },
-    description: "Description of bigender",
+    description:
+      "This term describes someone who identifies with two distinct genders. Bigender indicates the number of gender identities someone has.",
   },
   polygender: {
     min: { femaleness: 80, maleness: 80 },
