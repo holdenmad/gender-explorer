@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Paragraph, Box, Anchor, Text, Image } from "grommet";
+import { Heading, Paragraph, Box, Anchor, Image } from "grommet";
 
 const About = () => {
   return (
