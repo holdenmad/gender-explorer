@@ -133,7 +133,7 @@ const attractionMatrix = {
                 pad="small"
                 border={{ size: "small", color: "accent-1" }}
               >
-                {`${attraction[0]}: ${attraction[1].description}`}
+                <b>{`${attraction[0]}`}</b>{`${attraction[1].description}`}
               </Box>
             ))}
           </Box>

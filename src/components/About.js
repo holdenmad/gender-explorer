@@ -79,32 +79,39 @@ const About = () => {
       </Box>
 
       <Heading level="3">Attributions</Heading>
-      <Text>
-        Most images from{" "}
-        <Anchor href="https://stories.freepik.com/">
-          https://stories.freepik.com/
-        </Anchor>
-      </Text>
-      <Text direction="row">
-        Cockpit vector used thanks to{" "}
-        <Anchor href="www.freevector.com">www.freevector.com</Anchor>
-      </Text>
-      <Text direction="row">
-        Above illustration by <Anchor href="undefined">Icons 8</Anchor> from{" "}
-        <Anchor href="https://icons8.com/">Icons8</Anchor>
-      </Text>
-      <Text direction="row">
-        Reference to gender identities and expressions from{" "}
-        <Anchor href="https://www.healthline.com/health/different-genders"></Anchor>
-        this wonderful article by{" "}
-        <Anchor href="https://www.instagram.com/meretheir/">Mere Abrams</Anchor>
-      </Text>
-      <Text direction="row">
-        Reference to sexualities from{" "}
-        <Anchor href="http://thepbhscloset.weebly.com/a-list-of-genders--sexualities-and-their-definitions.html">
-          The PBHS Closet
-        </Anchor>
-      </Text>
+      <Box width="medium">
+        <ul>
+          <li>
+            Most images from{" "}
+            <Anchor href="https://stories.freepik.com/">
+              https://stories.freepik.com/
+            </Anchor>
+          </li>
+          <li direction="row">
+            Cockpit vector used thanks to{" "}
+            <Anchor href="www.freevector.com">www.freevector.com</Anchor>
+          </li>
+          <li direction="row">
+            Above illustration by <Anchor href="undefined">Icons 8</Anchor> from{" "}
+            <Anchor href="https://icons8.com/">Icons8</Anchor>
+          </li>
+          <li direction="row">
+            Reference to gender identities and expressions from{" "}
+            <Anchor href="https://www.healthline.com/health/different-genders">
+              this wonderful article by{" "}
+            </Anchor>
+            <Anchor href="https://www.instagram.com/meretheir/">
+              Mere Abrams
+            </Anchor>
+          </li>
+          <li direction="row">
+            Reference to sexualities from{" "}
+            <Anchor href="http://thepbhscloset.weebly.com/a-list-of-genders--sexualities-and-their-definitions.html">
+              The PBHS Closet
+            </Anchor>
+          </li>
+        </ul>
+      </Box>
     </Box>
   );
 };

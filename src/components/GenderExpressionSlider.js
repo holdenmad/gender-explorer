@@ -144,7 +144,7 @@ const GenderExpressionSlider = () => {
             pad="small"
             border={{ size: "small", color: "accent-1" }}
           >
-            {`${gender[0]}: ${gender[1].description}`}
+            <b>{`${gender[0]}`}</b>{`${gender[1].description}`}
           </Box>
         ))}
       </Box>

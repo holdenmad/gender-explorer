@@ -125,7 +125,7 @@ const BioSexSlider = () => {
             pad="small"
             border={{ size: "small", color: "accent-1" }}
           >
-            {`${sex[0]}: ${sex[1].description}`}
+            <b>{`${sex[0]}`}</b>{`${sex[1].description}`}
           </Box>
         ))}
       </Box>
