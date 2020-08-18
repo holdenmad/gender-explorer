@@ -5,32 +5,37 @@ const sexMatrix = {
   intersex: {
     min: { femaleness: 10, maleness: 10 },
     max: { femaleness: 90, maleness: 90 },
-    description: "Description of intersex",
+    description:
+      "An umbrella term that describes people who have sex characteristics — such as chromosomes, internal organs, hormones, or anatomy — that can’t be easily categorized into the binary sex framework of male or female.",
   },
   "cisgender female": {
     min: { femaleness: 70, maleness: 0 },
     max: { femaleness: 100, maleness: 30 },
-    description: "Description of cis female",
+    description:
+      "A person assigned female at birth who also identifies as female.",
   },
   "cisgender male": {
     min: { femaleness: 0, maleness: 70 },
     max: { femaleness: 30, maleness: 100 },
-    description: "Description of cis male",
+    description: "A person assigned male at birth who also identifies as male.",
   },
   "trans female": {
     min: { femaleness: 30, maleness: 0 },
     max: { femaleness: 100, maleness: 70 },
-    description: "Description of trans female",
+    description:
+      "Women who were assigned male at birth, also known as trans women, transfeminine people, etc. The acronym MTF (Male-to-female) is sometimes used, but cautiously.",
   },
   "trans male": {
     min: { femaleness: 0, maleness: 30 },
     max: { femaleness: 70, maleness: 100 },
-    description: "Description of trans male",
+    description:
+      "Men who were assigned female at birth, also known as trans men, transmasculine people, etc. The acronym FTM (Female-to-male) is sometimes used, but cautiously.",
   },
   trans: {
     min: { femaleness: 0, maleness: 0 },
     max: { femaleness: 100, maleness: 100 },
-    description: "Description of trans",
+    description:
+      "Also referred to as transgender. Both an umbrella term including many gender identities and a specific gender identity that describes those with a gender identity that’s different from the sex assigned at birth (male, female, or intersex).",
   },
 };
 
@@ -45,18 +50,16 @@ const BioSexSlider = () => {
   const computeVal = () => {
     const f = sex1Ref.current.value;
     const m = sex2Ref.current.value;
-    const matchingIdentities = Object.entries(sexMatrix).filter(
-      (key) => {
-        key = sexMatrix[key[0]];
-        // console.log('coords:', f, m, key);
-        return (
-          f >= key.min.femaleness &&
-          f <= key.max.femaleness &&
-          m >= key.min.maleness &&
-          m <= key.max.maleness
-        );
-      }
-    );
+    const matchingIdentities = Object.entries(sexMatrix).filter((key) => {
+      key = sexMatrix[key[0]];
+      // console.log('coords:', f, m, key);
+      return (
+        f >= key.min.femaleness &&
+        f <= key.max.femaleness &&
+        m >= key.min.maleness &&
+        m <= key.max.maleness
+      );
+    });
     setSex(matchingIdentities);
   };
 
@@ -93,11 +96,11 @@ const BioSexSlider = () => {
           a11yTitle="Female Sex Slider"
         />
       </Box>
-	  <Box pad="small" width="medium" justify="between" direction="row">
-          <Box direction="row">&#x20E0;</Box>
+      <Box pad="small" width="medium" justify="between" direction="row">
+        <Box direction="row">&#x20E0;</Box>
 
-          <Box direction="row">&#8734;</Box>
-        </Box>
+        <Box direction="row">&#8734;</Box>
+      </Box>
       <Box width="medium" className="sex2">
         Male
         <RangeInput
@@ -129,4 +132,4 @@ const BioSexSlider = () => {
   );
 };
 
-export default BioSexSlider
+export default BioSexSlider;

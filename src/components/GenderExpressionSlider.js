@@ -22,32 +22,37 @@ const genderExpMatrix = {
   butch: {
     min: { femininity: 0, masculinity: 80 },
     max: { femininity: 20, masculinity: 100 },
-    description: "Description of Butch",
+    description: "Primarily used in LGBTQIA+ communities, this term typically describes someone with a presentation, sexuality, or gender that’s considered masculine.",
+  },
+  "masculine-presenting": {
+    min: { femininity: 0, masculinity: 60 },
+    max: { femininity: 40, masculinity: 100 },
+    description: "Primarily used in LGBTQIA+ communities, this term typically describes someone with a presentation, sexuality, or gender that’s considered masculine.",
   },
   femme: {
     min: { femininity: 80, masculinity: 0 },
     max: { femininity: 100, masculinity: 20 },
-    description: "Description of Femme",
+    description: "This is a label for a gender identity or expression that describes someone with a gender that is or leans towards feminine. Some femmes also identify as women, while many others don’t.",
   },
-  androgynous: {
+  "feminine-presenting": {
+    min: { femininity: 60, masculinity: 0 },
+    max: { femininity: 100, masculinity: 40 },
+    description: "This is a label for a gender identity or expression that describes someone with a gender that is or leans towards feminine. Some femmes also identify as women, while many others don’t.",
+  },
+  androgyne: {
     min: { femininity: 40, masculinity: 40 },
     max: { femininity: 70, masculinity: 70 },
-    description: "Description of Androgynous",
-  },
-  nonbinary: {
-    min: { femininity: 10, masculinity: 10 },
-    max: { femininity: 90, masculinity: 90 },
-    description: "Description of Nonbinary",
+    description: "Someone who has a gender presentation or identity that’s gender neutral, androgynous, or has both masculine and feminine characteristics.",
   },
   genderfluid: {
     min: { femininity: 0, masculinity: 0 },
     max: { femininity: 100, masculinity: 100 },
-    description: "Description of Gender Fluid",
+    description: "This label is used to describe gender identity or expression. It involves the experience of moving between genders or having a gender that changes over a particular period of time. For example, from moment to moment, day to day, month to month, year to year, or decade to decade.",
   },
   agender: {
     min: { femininity: 0, masculinity: 0 },
     max: { femininity: 20, masculinity: 20 },
-    description: "Description of A-gender",
+    description: "Someone who doesn’t identify with the idea or experience of having a gender.",
   },
 };
 

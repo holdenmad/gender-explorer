@@ -2,55 +2,55 @@ import React, { useState, useRef } from "react";
 import { Box, RangeInput } from "grommet";
 
 const attractionMatrix = {
-    demi: {
+    demisexual: {
         min: { femaleness: 10, maleness: 10 },
         max: { femaleness: 60, maleness: 60 },
-        description: "Description of nonbinary",
+        description: "Someone who only experiences sexual attraction after forming a strong emotional bond first or a romantic bond",
       },
       lesbian: {
         min: { femaleness: 80, maleness: 0 },
         max: { femaleness: 100, maleness: 20 },
-        description: "Description of cis female",
+        description: "Women (trans or cis) who are attracted only to other women.",
       },
       gay: {
         min: { femaleness: 0, maleness: 80 },
         max: { femaleness: 20, maleness: 100 },
-        description: "Description of cis male",
+        description: "Often refers to men (trans or cis) who are attracted only to other men, but can also refer to women.",
       },
       "straight female": {
         min: { femaleness: 0, maleness: 80 },
         max: { femaleness: 20, maleness: 100 },
-        description: "Description of cis female",
+        description: "Women who are only attracted to men. Generally someone who has a binary gender.",
       },
       "straight male": {
         min: { femaleness: 80, maleness: 0 },
         max: { femaleness: 100, maleness: 20 },
-        description: "Description of straight",
+        description: "Men who are only attracted to women. Generally someone who has a binary gender.,
       },
       asexual: {
         min: { femaleness: 0, maleness: 0 },
         max: { femaleness: 30, maleness: 30 },
-        description: "Description of asexual",
+        description: "Not experiencing sexual attraction. Sometimes the term, ace, is used to describe asexuals.",
       },
       aromantic: {
         min: { femaleness: 0, maleness: 0 },
         max: { femaleness: 30, maleness: 30 },
-        description: "Description of aromantic",
+        description: "Similar to asexual, but instead of no sexual attraction, describes someone who does not experience romantic attraction.",
       },
       bisexual: {
         min: { femaleness: 40, maleness: 40 },
         max: { femaleness: 100, maleness: 100 },
-        description: "Description of bigender",
+        description: "Someone who is attracted to two or more genders.  This term is generally used to describe being attracted to men and women, but can apply to being attracted to any two or more genders. Note that one do not have to be equally attracted to each gender.",
       },
       pansexual: {
         min: { femaleness: 60, maleness: 60 },
         max: { femaleness: 100, maleness: 100 },
-        description: "Description of polygender",
+        description: "Someone who is attracted to all genders and/or do not concern gender when one is attracted towards someone",
       },
       queer: {
         min: { femaleness: 0, maleness: 0 },
         max: { femaleness: 100, maleness: 100 },
-        description: "Description of trans",
+        description: "A reclaimed slur for anybody in the LGBT+ community or who do not identify as cisgender and/or hetersexual/heteromantic",
       },
     };
     

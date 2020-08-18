@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import {Box, RangeInput } from "grommet";
+import { Box, RangeInput } from "grommet";
 
 const genderIdentityMatrix = {
   nonbinary: {
@@ -8,6 +8,7 @@ const genderIdentityMatrix = {
     description:
       "Also referred to as enby, this is a gender identity and umbrella term for gender identities that can’t be exclusively categorized as male or female.",
   },
+  
   "cisgender female": {
     min: { femaleness: 80, maleness: 0 },
     max: { femaleness: 100, maleness: 20 },
@@ -30,6 +31,11 @@ const genderIdentityMatrix = {
     max: { femaleness: 100, maleness: 30 },
     description: "Someone assigned male at birth who identifies as female.",
   },
+  demigirl: {
+    min: { femaleness: 50, maleness: 0 },
+    max: { femaleness: 100, maleness: 50 },
+    description: "This nonbinary gender identity describes someone who partially identifies as a girl, woman, womxn, or feminine.",
+  },
   "transgender male": {
     min: { femaleness: 0, maleness: 80 },
     max: { femaleness: 20, maleness: 100 },
@@ -40,10 +46,16 @@ const genderIdentityMatrix = {
     max: { femaleness: 30, maleness: 100 },
     description: "Someone assigned female at birth who identifies as male.",
   },
+  demiboy: {
+    min: { femaleness: 0, maleness: 50 },
+    max: { femaleness: 50, maleness: 100 },
+    description: "This nonbinary gender identity describes someone who partially identifies as a boy, man, or masculine.",
+  },
   genderfluid: {
     min: { femaleness: 0, maleness: 0 },
     max: { femaleness: 100, maleness: 100 },
-    description: "Description of genderfluid",
+    description:
+      "This label is used to describe gender identity or expression. It involves the experience of moving between genders or having a gender that changes over a particular period of time. For example, from moment to moment, day to day, month to month, year to year, or decade to decade.",
   },
   agender: {
     min: { femaleness: 0, maleness: 0 },
@@ -55,17 +67,19 @@ const genderIdentityMatrix = {
     min: { femaleness: 50, maleness: 50 },
     max: { femaleness: 100, maleness: 100 },
     description:
-      "This term describes someone who identifies with two distinct genders. Bigender indicates the number of gender identities someone has.",
+      "Someone identifies with two distinct genders. Bigender indicates the number of gender identities someone has.",
   },
   polygender: {
     min: { femaleness: 80, maleness: 80 },
     max: { femaleness: 100, maleness: 100 },
-    description: "Description of polygender",
+    description:
+      "The experience of having multiple gender identities, simultaneously or over time. This term indicates the number of gender identities someone experiences, but doesn’t necessarily indicate which genders are included in the given person’s polygender identity.",
   },
   trans: {
     min: { femaleness: 0, maleness: 0 },
     max: { femaleness: 100, maleness: 100 },
-    description: "Description of trans",
+    description:
+      "Also referred to as transgender. Both an umbrella term including many gender identities and a specific gender identity that describes those with a gender identity that’s different from the sex assigned at birth (male, female, or intersex).",
   },
 };
 
