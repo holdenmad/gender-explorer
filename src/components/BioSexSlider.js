@@ -81,7 +81,7 @@ const BioSexSlider = () => {
     */
 
   return (
-    <Box margin="large">
+    <Box margin="large" align="center">
       <Box width="medium" className="sex1">
         Female
         <RangeInput
@@ -115,11 +115,12 @@ const BioSexSlider = () => {
           a11yTitle="Male Sex Slider"
         />
       </Box>
-      <Box>
+      <Box align="center">
         {" "}
         {sex.map((sex) => (
           <Box
             key={sex[0]}
+            width="medium"
             margin="small"
             pad="small"
             border={{ size: "small", color: "accent-1" }}

@@ -100,8 +100,7 @@ const GenderExpressionSlider = () => {
     */
 
   return (
-    <Box>
-      <Box margin="large">
+      <Box margin="large" align="center">
         <Box width="medium" className="genderexp1">
           Feminine
           <RangeInput
@@ -135,12 +134,12 @@ const GenderExpressionSlider = () => {
             a11yTitle="Masculine Expression Slider"
           />
         </Box>
-      </Box>
-      <Box>
+      <Box align="center">
         {" "}
         {genderExp.map((gender) => (
           <Box
             key={gender[0]}
+            width="medium"
             margin="small"
             pad="small"
             border={{ size: "small", color: "accent-1" }}

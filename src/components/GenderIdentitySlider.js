@@ -127,7 +127,7 @@ const GenderIdentitySlider = () => {
     */
 
   return (
-    <Box margin="large">
+    <Box margin="large" align="center">
       <Box width="medium" className="genderId1">
         Feminine
         <RangeInput
@@ -161,7 +161,7 @@ const GenderIdentitySlider = () => {
           a11yTitle="Masculine Identity Slider"
         />
       </Box>
-      <Box>
+      <Box align="center">
         {" "}
         {genderId.map((gender) => (
           <Box

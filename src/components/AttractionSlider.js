@@ -89,7 +89,7 @@ const attractionMatrix = {
       };
     
       return (
-        <Box margin="large">
+        <Box margin="large" align="center">
           <Box width="medium" className="attractionId1">
             Female/Femaleness/Femininity
             <RangeInput
@@ -123,11 +123,12 @@ const attractionMatrix = {
               a11yTitle="Masculine Attraction Slider"
             />
           </Box>
-          <Box>
+          <Box align="center">
             {" "}
             {attraction.map((attraction) => (
               <Box
                 key={attraction[0]}
+                width="medium"
                 margin="small"
                 pad="small"
                 border={{ size: "small", color: "accent-1" }}
