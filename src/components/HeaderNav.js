@@ -23,7 +23,7 @@ const HeaderNav = () => {
                             />
                         ) : (
                     <Nav justify="end" direction="row">
-                        <Anchor href="/About" label="About"></Anchor>
+                        <Anchor href="/about" label="About"></Anchor>
                         <Anchor href="/expression" label="Expression"></Anchor>
                         <Anchor href="/identity" label="Identity"></Anchor>
                         <Anchor href="/sex" label="Sex"></Anchor>
