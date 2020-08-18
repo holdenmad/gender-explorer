@@ -25,7 +25,7 @@ const attractionMatrix = {
       "straight male": {
         min: { femaleness: 80, maleness: 0 },
         max: { femaleness: 100, maleness: 20 },
-        description: "Men who are only attracted to women. Generally someone who has a binary gender.,
+        description: "Men who are only attracted to women. Generally someone who has a binary gender.",
       },
       asexual: {
         min: { femaleness: 0, maleness: 0 },
