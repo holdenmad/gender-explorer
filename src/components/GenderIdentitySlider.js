@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Heading, Box, RangeInput } from "grommet";
+import {Box, RangeInput } from "grommet";
 
 const genderIdentityMatrix = {
   nonbinary: {
@@ -125,7 +125,7 @@ const GenderIdentitySlider = () => {
           defaultValue="50"
           step={1}
           className="slider"
-          label="Feminine Identity Slider"
+          a11yTitle="Feminine Identity Slider"
         />
       </Box>
       <Box pad="small" width="medium" justify="between" direction="row">
@@ -144,7 +144,7 @@ const GenderIdentitySlider = () => {
           defaultValue="50"
           step={1}
           className="slider"
-          label="Masculine Identity Slider"
+          a11yTitle="Masculine Identity Slider"
         />
       </Box>
       <Box>

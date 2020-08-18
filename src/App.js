@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import { Box, Heading, Main } from "grommet";
-import Instructions from "./components/Instructions";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Box, Main } from "grommet";
 // import AssignedAtBirth from './components/AssignedAtBirth'
 // import BioSexSlider from './components/BioSexSlider'
 // import GenderExpressionSlider from './components/GenderExpressionSlider'
@@ -28,7 +27,6 @@ function App() {
     <BrowserRouter>
     <Box flex className="container">
         <HeaderNav />
-        {/* <Heading alignSelf="center" level="1">Gender Explorer</Heading> */}
         <Main flex={{grow: 3}} className="main">
       
           {/* ROUTER */}

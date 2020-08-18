@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Heading, Box, RangeInput } from "grommet";
+import { Box, RangeInput } from "grommet";
 
 const sexMatrix = {
   intersex: {
@@ -90,7 +90,7 @@ const BioSexSlider = () => {
           defaultValue="50"
           step={1}
           className="slider"
-          label="Female Sex Slider"
+          a11yTitle="Female Sex Slider"
         />
       </Box>
 	  <Box pad="small" width="medium" justify="between" direction="row">
@@ -109,7 +109,7 @@ const BioSexSlider = () => {
           defaultValue="50"
           step={1}
           className="slider"
-          label="Male Sex Slider"
+          a11yTitle="Male Sex Slider"
         />
       </Box>
       <Box>

@@ -1,17 +1,11 @@
 import React from 'react'
-import {Header, Nav, Anchor, Box, Menu, ResponsiveContext, Icon} from 'grommet'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
-
-// const studentClicked = id => {
-//     history.push("/students/" + id);
-//   };
+import {Header, Nav, Anchor, Box, Menu, ResponsiveContext} from 'grommet'
 
 const HeaderNav = () => {
     return (
             <Header pad="medium" background="brand">
                 <Box direction="row">
-                    <span><i class="fas fa-user-astronaut fa-2x"></i></span>
+                    <span><i className="fas fa-user-astronaut fa-2x"></i></span>
                     <Anchor size="large" margin={{left: 'small'}} alignSelf="center" href="/" label="Gender Explorer" weight="bold"></Anchor>
                 </Box>
                 <ResponsiveContext.Consumer>
@@ -35,7 +29,6 @@ const HeaderNav = () => {
                         <Anchor href="/sex" label="Sex"></Anchor>
                         <Anchor href="/attraction" label="Attraction"></Anchor>
                     </Nav>
-            
     )
 }
 </ResponsiveContext.Consumer>

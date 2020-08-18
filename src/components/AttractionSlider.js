@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Heading, Box, RangeInput } from "grommet";
+import { Box, RangeInput } from "grommet";
 
 const attractionMatrix = {
     demi: {
@@ -88,15 +88,6 @@ const attractionMatrix = {
         computeVal();
       };
     
-      /*
-        // Logic of Sliders:
-        - Create data structure to throw terms we want to focus on
-        - Think of it like the dimensions of a crane game (matrix)
-        - Some things occupy the same space (like having a squirtle under a pikachu)
-        - Matrixes can have overlapping values
-    
-        */
-    
       return (
         <Box margin="large">
           <Box width="medium" className="attractionId1">
@@ -110,7 +101,7 @@ const attractionMatrix = {
               defaultValue="50"
               step={1}
               className="slider"
-              label="Feminine Attraction Slider"
+              a11yTitle="Feminine Attraction Slider"
             />
           </Box>
           <Box pad="small" width="medium" justify="between" direction="row">
@@ -129,7 +120,7 @@ const attractionMatrix = {
               defaultValue="50"
               step={1}
               className="slider"
-              label="Masculine Attraction Slider"
+              a11yTitle="Masculine Attraction Slider"
             />
           </Box>
           <Box>

@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Box, RangeInput, Heading, Paragraph } from "grommet";
-import { Clear } from "grommet-icons";
+import { Box, RangeInput } from "grommet";
 
 const genderExpMatrix = {
   // "top-right-quadrant": {
@@ -109,7 +108,7 @@ const GenderExpressionSlider = () => {
             defaultValue="50"
             step={0.1}
             className="slider"
-            label="Feminine Expression Slider"
+            a11yTitle="Feminine Expression Slider"
           />
         </Box>
         <Box pad="small" width="medium" justify="between" direction="row">
@@ -128,7 +127,7 @@ const GenderExpressionSlider = () => {
             defaultValue="50"
             step={0.1}
             className="slider"
-            label="Masculine Expression Slider"
+            a11yTitle="Masculine Expression Slider"
           />
         </Box>
       </Box>
