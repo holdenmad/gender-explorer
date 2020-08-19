@@ -8,7 +8,7 @@ This app is an educational tool to encourage you to explorer your own gender and
 
 The tool is not meant to be a comprehensive list of genders and sexualities, rather an invitation to think of gender and sexuality in a new way.
 
-![Screenshot of Gender Expression Page with Graphic](https://i.ibb.co/3sCFTWZ/Screenshot-2020-08-18-at-18-37-49.png)
+![Screenshot of Gender Expression Page with Graphic](https://i.ibb.co/G76sdDM/Screenshot-2020-08-18-at-18-37-49.png)
 ![Screenshot of Gender Expression Page with instructions](https://i.ibb.co/T23mXZP/Screenshot-2020-08-18-at-18-38-04.png)
 
 
