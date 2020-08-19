@@ -19,8 +19,9 @@ You find any bugs or accessibility problems, please feel free to open a new issu
 
 - HTML/CSS
 - React.js
-- Grommet
-- Lighthouse
+- [Grommet](https://v2.grommet.io/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/#cli)
+- [Lottie Files](https://lottiefiles.com/)
 
 ## Links
 
