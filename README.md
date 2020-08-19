@@ -1,8 +1,8 @@
 # Gender Explorer
 
-[Live Demo!](https://gender-explorer.netlify.app/)
-
 ![Screenshot of Gender Explorer](https://i.ibb.co/2yR7TsM/Screenshot-2020-08-19-at-09-32-21.png)
+
+[Explore the Live Demo!](https://gender-explorer.netlify.app/)
 
 ## About
 
